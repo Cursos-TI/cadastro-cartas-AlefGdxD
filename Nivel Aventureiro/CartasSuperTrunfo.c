@@ -9,11 +9,13 @@ int main() {
   
   char estadoCartaDois, codigoCartaDois[4], cidadeCartaDois[50];
   int populacaoCartaDois, pontosTuristicosCartaDois;
-  float pibCartaDois, areaCartaDois;
+  float pibCartaDois, areaCartaDois, densidadePopulacionalCartaUm, 
+  densidadePopulacionalCartaDois, pibPerCapitaCartaUm, pibPerCapitaCartaDois;
 
 
-  printf("Bem-vindo ao jogo Super trunfo v1.0! \n");
-  printf("Monte duas super cartas e veja seus status no seu terminal! \n");
+  printf("Bem-vindo ao jogo Super trunfo v1.1! \n");
+  printf("Agora com novas funções como o calculo de densidade populacional e muito mais! \n");
+  printf("Monte duas super cartas e veja seus status no terminal! \n");
 
   // Input das informações da carta 1
   printf("Cadastre a primeira carta: \n");
@@ -61,7 +63,15 @@ int main() {
 
   printf("Número de pontos turísticos: "); 
   scanf("%i", &pontosTuristicosCartaDois);
+  
+  
+  // Calculo da densidade populacional e PIB por Capita da carta um
+  densidadePopulacionalCartaUm = populacaoCartaUm / areaCartaUm;
+  pibPerCapitaCartaUm = populacaoCartaUm / pibCartaUm ;
 
+  // Calculo da densidade populacional e PIB por Capita da carta dois
+  densidadePopulacionalCartaDois = (float) populacaoCartaDois / areaCartaDois;
+  pibPerCapitaCartaDois = (float) populacaoCartaDois / pibCartaDois;
 
   //Exibição da carta 1
   printf("\n\nCarta 1:");
@@ -72,6 +82,8 @@ int main() {
   printf("\nÁrea: %.2f km²", areaCartaUm);
   printf("\nPIB: %.2f bilhões de reais", pibCartaUm);
   printf("\nNúmero de Pontos Turísticos: %i", pontosTuristicosCartaUm);
+  printf("\nDensidade Populacional: %.2f", densidadePopulacionalCartaUm);
+  printf("\nPIB per Capita: %.2f reais", pibPerCapitaCartaUm);
 
   //Exibição da carta 2
   printf("\n\nCarta 2:");
@@ -82,6 +94,8 @@ int main() {
   printf("\nÁrea: %.2f km²", areaCartaDois);
   printf("\nPIB: %.2f bilhões de reais", pibCartaDois);
   printf("\nNúmero de Pontos Turísticos: %i", pontosTuristicosCartaDois);
+  printf("\nDensidade Populacional: %.2f", densidadePopulacionalCartaDois);
+  printf("\nPIB per Capita: %.2f reais", pibPerCapitaCartaDois);
 
 return 0;
 } 
