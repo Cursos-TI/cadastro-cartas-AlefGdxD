@@ -89,9 +89,32 @@ int main() {
     + pibPerCapitaCartaDois
     + (1 / densidadePopulacionalCartaDois);
 
+  //Exibição da carta 1
+  printf("\n\nCarta 1:");
+  printf("\nEstado: %c", estadoCartaUm);
+  printf("\nCódigo: %s", codigoCartaUm);
+  printf("\nNome da Cidade: %s", cidadeCartaUm);
+  printf("\nPopulação: %i", populacaoCartaUm);
+  printf("\nÁrea: %.2f km²", areaCartaUm);
+  printf("\nPIB: %.2f bilhões de reais", pibCartaUm);
+  printf("\nNúmero de Pontos Turísticos: %i", pontosTuristicosCartaUm);
+  printf("\nDensidade Populacional: %.2f", densidadePopulacionalCartaUm);
+  printf("\nPIB per Capita: %.2f reais", pibPerCapitaCartaUm);
+
+  //Exibição da carta 2
+  printf("\n\nCarta 2:");
+  printf("\nEstado: %c", estadoCartaDois);
+  printf("\nCódigo: %s", codigoCartaDois);
+  printf("\nNome da Cidade: %s", cidadeCartaDois);
+  printf("\nPopulação: %i", populacaoCartaDois);
+  printf("\nÁrea: %.2f km²", areaCartaDois);
+  printf("\nPIB: %.2f bilhões de reais", pibCartaDois);
+  printf("\nNúmero de Pontos Turísticos: %i", pontosTuristicosCartaDois);
+  printf("\nDensidade Populacional: %.2f", densidadePopulacionalCartaDois);
+  printf("\nPIB per Capita: %.2f reais", pibPerCapitaCartaDois);
+
 
   // Comparação/Lógica para comparar o que cada carta ganhou
-
   if (populacaoCartaUm > populacaoCartaDois) {
     printf("\n\nPopulação: Carta 1 venceu (%d)\n", populacaoCartaUm > populacaoCartaDois);
   } else {
@@ -116,10 +139,10 @@ int main() {
     printf("Pontos Turísticos: Carta 2 venceu (%d)\n", pontosTuristicosCartaUm > pontosTuristicosCartaDois);
   }
 
-  if (densidadePopulacionalCartaUm > densidadePopulacionalCartaDois) {
-    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidadePopulacionalCartaUm > densidadePopulacionalCartaDois);
+  if (densidadePopulacionalCartaUm < densidadePopulacionalCartaDois) {
+    printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidadePopulacionalCartaUm < densidadePopulacionalCartaDois);
   } else {
-    printf("Densidade Populacional: Carta 2 venceu (%d)\n", densidadePopulacionalCartaUm > densidadePopulacionalCartaDois);
+    printf("Densidade Populacional: Carta 2 venceu (%d)\n", densidadePopulacionalCartaUm < densidadePopulacionalCartaDois);
   }
 
   if (pibPerCapitaCartaUm > pibPerCapitaCartaDois) {
