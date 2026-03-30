@@ -3,14 +3,16 @@
 int main() {
 
   // Para não repetir a declaração de variavéis várias vezes decidi colocar todos em uma linha só para não usar muito espaço
+
+  //Declaração das variavéis da carta Um
   char estadoCartaUm, codigoCartaUm[4], cidadeCartaUm[50];
   int populacaoCartaUm ,pontosTuristicosCartaUm;
-  float areaCartaUm, pibCartaUm;
-  
+  float pibCartaUm, areaCartaUm, pibPerCapitaCartaUm, densidadePopulacionalCartaUm, superPoderCartaUm;
+
+  //Declaração das variavéis da carta Dois
   char estadoCartaDois, codigoCartaDois[4], cidadeCartaDois[50];
   int populacaoCartaDois, pontosTuristicosCartaDois;
-  float pibCartaDois, areaCartaDois, densidadePopulacionalCartaUm, 
-  densidadePopulacionalCartaDois, pibPerCapitaCartaUm, pibPerCapitaCartaDois;
+  float pibCartaDois, areaCartaDois, densidadePopulacionalCartaDois, pibPerCapitaCartaDois, superPoderCartaDois;
 
 
   printf("Bem-vindo ao jogo Super trunfo v1.1! \n");
