@@ -44,7 +44,7 @@ int main() {
 
 
   // Input das informações da carta 2
-  printf("Agora cadastre a segunda carta: \n");
+  printf("\nAgora cadastre a segunda carta: \n");
   printf("Estado: "); 
   scanf(" %c", &estadoCartaDois);
 

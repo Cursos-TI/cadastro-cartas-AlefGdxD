@@ -18,8 +18,8 @@ int main() {
 
 
   printf("Bem-vindo ao jogo Super trunfo v1.2! \n");
-  printf("Agora com novas funções como a comparação de cartas e o Super Poder delas! \n");
-  printf("Monte duas super cartas e compare elas para ver qual é a mais forte! \n");
+  printf("Esta versão foi feita para comparação de cartas e o criar o Super Poder delas! \n");
+  printf("Monte as duas super cartas e compare elas para ver qual é a mais forte! \n");
 
   // Input das informações da carta 1
   printf("Cadastre a primeira carta: \n");
@@ -46,7 +46,7 @@ int main() {
 
 
   // Input das informações da carta 2
-  printf("Agora cadastre a segunda carta: \n");
+  printf("\nAgora cadastre a segunda carta: \n");
   printf("Estado: "); 
   scanf(" %c", &estadoCartaDois);
 
@@ -90,7 +90,7 @@ int main() {
     + (1 / densidadePopulacionalCartaDois);
 
 
-  // Comparação/Lógica para saber o que cada carta ganhou
+  // Comparação/Lógica para comparar o que cada carta ganhou
 
   if (populacaoCartaUm > populacaoCartaDois) {
     printf("\n\nPopulação: Carta 1 venceu (%d)\n", populacaoCartaUm > populacaoCartaDois);
